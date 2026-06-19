@@ -7,7 +7,10 @@ pub fn Layout() -> Element {
     rsx! {
         div {
             class: "w-[80%]",
-            Outlet::<Route> {}
+            div {
+                class: "flex flex-col gap-5 min-h-full mr-5",
+                Outlet::<Route> {}
+            }
         }
         div {
             class: "w-[20%]",
