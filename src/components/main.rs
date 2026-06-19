@@ -1,4 +1,4 @@
-use super::Footer;
+use super::footer::Footer;
 
 use dioxus::prelude::*;
 
@@ -6,11 +6,11 @@ use dioxus::prelude::*;
 pub fn Main() -> Element {
     rsx! {
         div {
-            class: "flex flex-col gap-5 p-18",
+            class: "flex flex-col gap-5 min-h-full mr-5",
             header {
                 h1 {
-                    class: "font-bold text-4xl",
-                    "Welcome"
+                    class: "main-heading",
+                    "ABOUT_ME"
                 }
             }
             section {
@@ -18,9 +18,18 @@ pub fn Main() -> Element {
                 "I am a fullstack engineer, focusing on backend and infrastructure"
             }
             section {
+                p {
+                    class: "font-serif font-bold uppercase tracking-wider text-slate-600",
+                    "Location: Bangkok, Thailand"
+                }
+            }
+            section {
                 "This website was made by Dioxus Rust."
             }
-            Footer {}
+            div {
+                class: "mt-auto",
+                Footer {}
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 mod components;
 mod route;
+mod views;
 
 use dioxus::prelude::*;
 use route::Route;
