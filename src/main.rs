@@ -14,6 +14,9 @@ fn app() -> Element {
     rsx! {
         document::Stylesheet { href: asset!("/assets/tailwind.css") }
         document::Stylesheet { href: asset!("/assets/main.css") }
-        Router::<Route> {}
+        div {
+            class: "flex flex-row p-18 min-h-screen",
+            Router::<Route> {}
+        }
     }
 }

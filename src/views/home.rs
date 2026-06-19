@@ -1,19 +1,33 @@
-use crate::components::{aside, main};
+use crate::components::footer;
 use dioxus::prelude::*;
 
 #[component]
 pub fn Home() -> Element {
     rsx! {
         div {
-            class: "flex flex-row p-18 min-h-screen",
-            div {
-                class: "w-[80%]",
-                main::Main {}
+            class: "flex flex-col gap-5 min-h-full mr-5",
+            header {
+                h1 {
+                    class: "main-heading",
+                    "ABOUT_ME"
+                }
             }
-
+            section {
+                class: "text-xl",
+                "I am a fullstack engineer, focusing on backend and infrastructure"
+            }
+            section {
+                p {
+                    class: "font-serif font-bold uppercase tracking-wider text-slate-600",
+                    "Location: Bangkok, Thailand"
+                }
+            }
+            section {
+                "This website was made by Dioxus Rust."
+            }
             div {
-                class: "w-[20%]",
-                aside::Aside {}
+                class: "mt-auto",
+                footer::Footer {}
             }
         }
     }

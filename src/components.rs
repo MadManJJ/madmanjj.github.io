@@ -1,3 +1,3 @@
 pub mod aside;
 pub mod footer;
-pub mod main;
+pub mod layout;
