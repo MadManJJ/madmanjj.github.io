@@ -12,7 +12,21 @@ pub fn Footer() -> Element {
                 "© {current_year} All Rights Reserved"
             },
             div {
-                "abc2"
+                class: "flex flex-row gap-5",
+                a {
+                    class: "text-blue-800 underline font-serif tracking-wide uppercase",
+                    href: "https://github.com/MadManJJ",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "Github"
+                }
+                a {
+                    class: "text-blue-800 underline font-serif tracking-wide uppercase",
+                    href: "https://www.linkedin.com/in/pannawich-thamart/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "Linkedin"
+                }
             }
         }
     }
