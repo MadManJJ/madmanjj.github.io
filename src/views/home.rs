@@ -1,8 +1,10 @@
-use crate::components::footer;
 use dioxus::prelude::*;
 
 #[component]
 pub fn Home() -> Element {
+    let user = "pannawich.tha";
+    let domain = "gmail.com";
+    let full_email = format!("{}@{}", user, domain);
     rsx! {
         h1 {
             class: "main-heading",
@@ -10,7 +12,16 @@ pub fn Home() -> Element {
         }
         section {
             class: "text-xl",
-            "I am a fullstack engineer, focusing on backend and infrastructure"
+            p { "I am a fullstack engineer, focusing on backend and infrastructure." }
+
+            p {
+                "My work email is "
+                a {
+                    href: "mailto:{full_email}",
+                    class: "font-serif font-bold underline",
+                    "{full_email}"
+                }
+            }
         }
         section {
             p {
@@ -20,10 +31,6 @@ pub fn Home() -> Element {
         }
         section {
             "This website was made by Dioxus Rust."
-        }
-        div {
-            class: "mt-auto",
-            footer::Footer {}
         }
     }
 }
