@@ -190,7 +190,7 @@ pub fn Resume() -> Element {
                         }
                         ul {
                             class: "list-disc list-inside text-slate-700",
-                            li { "Engineered highly performant RESTful APIs in Go, adhering strictly to Clean Architecture principles (Handler, Service, Repository layers)." }
+                            li { "Engineered RESTful APIs in Go, adhering strictly to Clean Architecture principles." }
                             li { "Authored comprehensive unit tests utilizing Go testing and Testify, significantly increasing code coverage and system reliability." }
                             li { "Integrated LINE Login OAuth for secure, streamlined user authentication." }
                             li { "Enforced rigid security measures, including input sanitization and validation protocols to prevent injection attacks." }
