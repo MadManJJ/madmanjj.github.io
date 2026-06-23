@@ -11,7 +11,7 @@ pub fn Aside() -> Element {
     ];
     rsx! {
         aside {
-            class: "flex flex-col",
+            class: "ml-4 flex flex-col sticky top-[72px] self-start",
             h1 {
                 class: "main-heading",
                 "ARCHIVE"
