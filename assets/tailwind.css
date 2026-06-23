@@ -250,9 +250,6 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
-  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -440,9 +437,6 @@
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
-  .font-mono {
-    font-family: var(--font-mono);
-  }
   .font-serif {
     font-family: var(--font-serif);
   }
@@ -500,9 +494,6 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
-  .text-blue-700 {
-    color: var(--color-blue-700);
-  }
   .text-blue-800 {
     color: var(--color-blue-800);
   }
@@ -511,9 +502,6 @@
   }
   .text-gray-700 {
     color: var(--color-gray-700);
-  }
-  .text-red-800 {
-    color: var(--color-red-800);
   }
   .text-slate-500 {
     color: var(--color-slate-500);
