@@ -40,7 +40,7 @@ fn main() {
     for (year, stem) in &entries {
         let year = *year;
         code.push_str(&format!(
-            "    years.push(YearBooks {{\n        year: {year},\n        books: serde_json::from_str(include_str!(concat!(env!(\"CARGO_MANIFEST_DIR\"), \"/assets/books/{stem}.json\"))).unwrap_or_default(),\n    }});\n",
+            "    years.push(YearBooks {{\n  year: {year},\n  books: serde_json::from_str(include_str!(concat!(env!(\"CARGO_MANIFEST_DIR\"), \"/assets/books/{stem}.json\"))).unwrap_or_default(),\n    }});\n",
         ));
     }
 

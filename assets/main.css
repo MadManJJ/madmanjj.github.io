@@ -1,5 +1,6 @@
 * {
   font-family: "Times New Roman";
+  box-sizing: border-box;
 }
 
 a:focus-visible {
@@ -10,4 +11,30 @@ a:focus-visible {
 .main-heading {
   font-weight: bold;
   font-size: 2.25rem;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.profile-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  display: block;
+  margin-left: -0.75rem;
+}
+
+.home-content {
+  flex: 1;
 }
