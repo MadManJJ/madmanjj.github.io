@@ -7,7 +7,7 @@ pub fn Home() -> Element {
     let full_email = format!("{}@{}", user, domain);
     rsx! {
         div {
-            class: "flex flex-row max-w-[1000px]",
+            class: "flex flex-row",
             div {
                 class: "home-content flex flex-col gap-5",
                 h1 {
@@ -23,7 +23,7 @@ pub fn Home() -> Element {
                     }
 
                     p {
-                        class: "mt-10",
+                        class: "mt-4",
                         "My work email is "
                         a {
                             href: "mailto:{full_email}",
@@ -53,9 +53,34 @@ pub fn Home() -> Element {
                         }
                     }
                 }
+                h1 {
+                    class: "font-semibold text-xl mt-2 mb-0",
+                    "AVAILABILITY"
+                }
+
+                section {
+                    class: "text-xl",
+                    p {
+                        "I am currently open to freelance contracts, full-time backend/infra roles, or interesting open-source collaborations. "
+                        "Reach me at "
+                        a {
+                            href: "mailto:{full_email}",
+                            class: "font-serif font-bold underline",
+                            "{full_email}"
+                        }
+                        " or check my "
+                        a {
+                            class: "font-serif font-bold underline",
+                            href: "https://github.com/MadManJJ",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            "Github"
+                        }
+                    }
+                }
             }
             img {
-                class: "profile-image shrink-0",
+                class: "profile-image shrink-0 mr-12",
                 src: asset!("/assets/profile.jpg"),
                 alt: "Profile picture",
             }
