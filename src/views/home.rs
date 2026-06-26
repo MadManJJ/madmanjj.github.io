@@ -1,7 +1,27 @@
+use chrono::{FixedOffset, Utc};
 use dioxus::prelude::*;
+use gloo_timers::future::TimeoutFuture;
+
+fn format_bangkok_time() -> String {
+    let bangkok = FixedOffset::east_opt(7 * 3600).unwrap();
+    Utc::now()
+        .with_timezone(&bangkok)
+        .format("%H:%M:%S")
+        .to_string()
+}
 
 #[component]
 pub fn Home() -> Element {
+    let mut bangkok_time = use_signal(format_bangkok_time);
+
+    use_effect(move || {
+        spawn(async move {
+            loop {
+                TimeoutFuture::new(1_000).await;
+                bangkok_time.set(format_bangkok_time());
+            }
+        });
+    });
     let user = "pannawich.tha";
     let domain = "gmail.com";
     let full_email = format!("{}@{}", user, domain);
@@ -76,6 +96,17 @@ pub fn Home() -> Element {
                             rel: "noopener noreferrer",
                             "Github"
                         }
+                    }
+                }
+                section {
+                    class: "text-md text-slate-500 space-y-2 uppercase mt-3",
+                    p {
+                        class: "mb-0",
+                        "Local Time in Bangkok"
+                    }
+                    p {
+                        class: "text-2xl text-black font-bold normal-case not-italic",
+                        "{bangkok_time}"
                     }
                 }
             }
