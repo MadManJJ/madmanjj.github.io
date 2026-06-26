@@ -38,7 +38,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: target/dx/personal-site/release/web/public
 
       - id: deployment
         uses: actions/deploy-pages@v4
