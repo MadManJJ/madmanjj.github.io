@@ -140,9 +140,8 @@ pub fn Resume() -> Element {
                         }
                         ul {
                             class: "list-disc list-inside text-slate-700",
-                            li { "Architected and led the development of core campus digital platforms, managing a team of developers to deliver scalable software solutions." }
                             li { "Established engineering best practices, including code reviews, comprehensive testing workflows, and automated CI/CD pipelines." }
-                            li { "Mentored junior developers in frontend and backend technologies, accelerating sprint velocity and software delivery." }
+                            li { "Mentored developers across the full stack to ensure high-quality code delivery." }
                         }
                     }
                     div {
@@ -150,15 +149,15 @@ pub fn Resume() -> Element {
                             class: "flex justify-between items-baseline",
                             p {
                                 class: "font-semibold",
-                                span { "Full Stack Freelancer" }
+                                span { "FullStack Freelancer" }
                                 " | MEE PALANG MAI CO., LTD."
                             }
                             p { class: "text-slate-700 text-sm", "June 2026 – Present" }
                         }
                         ul {
                             class: "list-disc list-inside text-slate-700",
-                            li { "Developing Curious, a live audience engagement platform inspired by Kahoot and Mentimeter for Chulalongkorn University." }
-                            li { "Built full-stack features using Next.js, Go, MongoDB, and AWS-based services while collaborating with stakeholders to deliver real-time quizzes, polls, and Q&A functionality." }
+                            li { "Developed 'Curious', a live audience engagement platform for Chulalongkorn University supporting real-time quizzes, polls, and Q&A." }
+                            li { "Built full-stack features utilizing Next.js, Go, MongoDB, and AWS to ensure real-time scalability for concurrent users." }
                         }
                     }
                     div {
@@ -166,16 +165,15 @@ pub fn Resume() -> Element {
                             class: "flex justify-between items-baseline",
                             p {
                                 class: "font-semibold",
-                                span { "Full Stack Engineer Intern" }
+                                span { "FullStack Engineer Intern" }
                                 " | OxygenAI Co., Ltd. / OMNI DEAL CO., LTD."
                             }
                             p { class: "text-slate-700 text-sm", "May 2026 – July 2026" }
                         }
                         ul {
                             class: "list-disc list-inside text-slate-700",
-                            li { "Developed and maintained end-to-end web applications, leveraging Angular for the frontend and Go for the backend architecture." }
-                            li { "Integrated secure RESTful APIs using Go and optimized client-side state management and component performance in Angular, significantly improving page responsiveness." }
-                            li { "Collaborated with cross-functional teams in an Agile environment to rapidly scope, build, and deploy high-impact features." }
+                            li { "Maintained and extended distributed features across a polyglot microservice ecosystem using Go and Python." }
+                            li { "Diagnosed and debugged asynchronous data flows via NATS, troubleshooting event-driven communication issues to ensure reliable message delivery between decoupled services." }
                         }
                     }
                     div {
@@ -190,11 +188,10 @@ pub fn Resume() -> Element {
                         }
                         ul {
                             class: "list-disc list-inside text-slate-700",
-                            li { "Engineered RESTful APIs in Go, adhering strictly to Clean Architecture principles." }
-                            li { "Authored comprehensive unit tests utilizing Go testing and Testify, significantly increasing code coverage and system reliability." }
-                            li { "Integrated LINE Login OAuth for secure, streamlined user authentication." }
-                            li { "Enforced rigid security measures, including input sanitization and validation protocols to prevent injection attacks." }
-                            li { "Utilized GitLab for version control, actively driving regular code reviews and participating in fast-paced Agile sprints." }
+                            li { "Developed scalable RESTful APIs in Go, using Hexagonal Architecture principles to ensure highly maintainable and decoupled codebases." }
+                            li { "Designed and integrated secure third-party authentication flows utilizing LINE Login OAuth, streamlining the user onboarding experience." }
+                            li { "Built robust API middleware for input validation and data sanitization, safeguarding system endpoints against common vulnerabilities." }
+                            li { "Established comprehensive unit testing suites using testing and Testify to drive code reliability and maintain high test coverage." }
                         }
                     }
                 }
@@ -210,22 +207,6 @@ pub fn Resume() -> Element {
                     div {
                         div {
                             class: "flex justify-between items-baseline",
-                            p { class: "font-semibold", "Curious" }
-                        }
-                        p {
-                            class: "text-slate-700 mb-2",
-                            "A live audience engagement platform for Chulalongkorn University inspired by Kahoot and Mentimeter, enabling students to participate in real-time quizzes, polls, and interactive Q&A sessions."
-                        }
-                        p { class: "text-slate-700", "My Role" }
-                        ul {
-                            class: "list-disc list-inside text-slate-700",
-                            li { "Implement the content management for each Activity, Slide." }
-                            li { "Implement token-based authentication." }
-                        }
-                    }
-                    div {
-                        div {
-                            class: "flex justify-between items-baseline",
                             p {
                                 class: "font-semibold",
                                 "PokeBattleP2P "
@@ -238,14 +219,9 @@ pub fn Resume() -> Element {
                                 }
                             }
                         }
-                        p {
-                            class: "text-slate-700 mb-2",
-                            "A peer-to-peer multiplayer game using Java sockets to enable realtime gameplay between players."
-                        }
-                        p { class: "text-slate-700", "My Role" }
                         ul {
                             class: "list-disc list-inside text-slate-700",
-                            li { "Implemented the logic behind the fighting between two players and sending data from each player via a socket using Java and Java socket." }
+                            li { "Engineered a peer-to-peer multiplayer game utilizing Java sockets to facilitate low-latency, real-time gameplay and data synchronization between players." }
                         }
                     }
                     div {
@@ -263,14 +239,31 @@ pub fn Resume() -> Element {
                                 }
                             }
                         }
-                        p {
-                            class: "text-slate-700 mb-2",
-                            "A website for first-year students to participate in activity to get to know each other."
-                        }
-                        p { class: "text-slate-700", "My Role" }
                         ul {
                             class: "list-disc list-inside text-slate-700",
-                            li { "Designed and implemented the database and API for the Bingo page using Firebase, Next.js." }
+                            li { "Designed and implemented the database architecture and API utilizing Firebase and Next.js for a real-time, interactive Bingo application." }
+                            li { "Developed a responsive web platform to facilitate engagement and networking for incoming first-year university students." }
+                        }
+                    }
+                    div {
+                        div {
+                            class: "flex justify-between items-baseline",
+                            p {
+                                class: "font-semibold",
+                                "Concurrent Port Scanner "
+                                a {
+                                    class: "text-blue-600 underline text-sm font-normal",
+                                    href: "https://github.com/MadManJJ/port-scanner",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    "(https://github.com/MadManJJ/port-scanner)"
+                                }
+                            }
+                        }
+                        ul {
+                            class: "list-disc list-inside text-slate-700",
+                            li { "Developed a highly concurrent TCP port scanner and banner grabber using Go." }
+                            li { "Implemented worker pools and goroutines to efficiently manage thousands of simultaneous network connections and sequence asynchronous results." }
                         }
                     }
                 }
