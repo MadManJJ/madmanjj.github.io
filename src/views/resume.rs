@@ -24,7 +24,7 @@ pub fn Resume() -> Element {
                 }
                 div {
                     class: "text-slate-700",
-                    "/ UPDATED JUN 2026"
+                    "/ UPDATED JUL 2026"
                 }
             }
             div {
