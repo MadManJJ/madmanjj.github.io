@@ -256,7 +256,7 @@ pub fn Resume() -> Element {
                                     href: "https://github.com/MadManJJ/port-scanner",
                                     target: "_blank",
                                     rel: "noopener noreferrer",
-                                    "(https://github.com/MadManJJ/port-scanner)"
+                                    "(github.com/MadManJJ/port-scanner)"
                                 }
                             }
                         }

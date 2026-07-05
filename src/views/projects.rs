@@ -12,25 +12,25 @@ struct Project {
 pub fn Projects() -> Element {
     let projects = vec![
         Project {
-            title: "CUrious",
-            year: "2026",
-            description: "A live audience engagement platform for Chulalongkorn University inspired by Kahoot and Mentimeter, enabling students to participate in real-time quizzes, polls, and interactive Q&A sessions.",
-            link_text: "",
-            link_url: "", 
-        },
-        Project {
             title: "PokeBattleP2P",
             year: "2025",
-            description: "A peer-to-peer multiplayer game using Java sockets to enable realtime gameplay between players.",
+            description: "A decentralized, peer-to-peer multiplayer game built in Java. Utilizes low-level Java network sockets for real-time state synchronization, featuring a custom messaging protocol to handle player actions, combat resolution, and connection lifecycle management without a centralized server.",
             link_text: "[ GITHUB ]",
             link_url: "https://github.com/MadManJJ/PokeBattleP2P",
         },
         Project {
             title: "Vishnu 23rd and Intania First Date 2025",
             year: "2025",
-            description: "A website for first-year students to participate in activity to get to know each other.",
+            description: "A full-stack event website designed to facilitate ice-breaking activities for first-year engineering students. Features include real-time activity tracking, user registration, and an intuitive UI to drive student engagement during orientation.",
             link_text: "[ GITHUB ]",
             link_url: "https://github.com/vishnu-23rd/vishnu-23-website",
+        },
+        Project {
+            title: "Concurrent Port Scanner",
+            year: "2025",
+            description: "A high-performance, concurrent TCP port scanner build in Go. Features a worker pool architecture, banner-based service fingerprinting, graceful shutdown on SIGINT/SIGTERM, and ordered output via an in-flight result buffer.",
+            link_text: "[ GITHUB ]",
+            link_url: "https://github.com/MadManJJ/port-scanner",
         }
     ];
     rsx! {
