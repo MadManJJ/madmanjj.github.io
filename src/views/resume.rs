@@ -110,7 +110,7 @@ pub fn Resume() -> Element {
                         li {
                             class: "text-slate-700",
                             span { class: "font-semibold", "Cloud & Infrastructure:" }
-                            " AWS, Terraform, Docker, Kubernetes"
+                            " Docker, Minikube, AWS, Terraform"
                         }
                         li {
                             class: "text-slate-700",
