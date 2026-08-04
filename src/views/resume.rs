@@ -78,7 +78,7 @@ pub fn Resume() -> Element {
                     }
                     p {
                         class: "text-slate-700",
-                        "Current GPAX: 3.95"
+                        "Current GPAX: 3.97"
                     }
                 }
             }
