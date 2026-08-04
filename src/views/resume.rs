@@ -117,6 +117,12 @@ pub fn Resume() -> Element {
                             span { class: "font-semibold", "CI/CD & Testing:" }
                             " GitHub Actions, GitLab CI/CD, Playwright"
                         }
+
+                        li {
+                            class: "text-slate-700",
+                            span { class: "font-semibold", "Systems & Security:" }
+                            " Linux (Fedora, daily driver), Bash scripting, Networking fundamental, SSH"
+                        }
                     }
                 }
             }
