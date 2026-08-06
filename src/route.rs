@@ -1,5 +1,5 @@
 use crate::components::layout::Layout;
-use crate::views::{home, page_not_found, projects, reading_list, resume};
+use crate::views::{home, homelabs, page_not_found, projects, reading_list, resume};
 use dioxus::prelude::*;
 
 #[derive(Routable, PartialEq, Clone)]
@@ -16,6 +16,9 @@ pub enum Route {
 
     #[route("/projects", projects::Projects)]
     Projects {},
+
+    #[route("/homelab", homelabs::Homelabs)]
+    Homelabs {},
 
     #[route("/reading-list", reading_list::ReadingList)]
     ReadingList {},

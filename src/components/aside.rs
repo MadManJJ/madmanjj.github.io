@@ -7,6 +7,7 @@ pub fn Aside() -> Element {
         (Route::Home {}, "Home"),
         (Route::Resume {}, "Resume"),
         (Route::Projects {}, "Projects"),
+        (Route::Homelabs {}, "Homelabs"),
         (Route::ReadingList {}, "Reading List"),
     ];
     rsx! {
