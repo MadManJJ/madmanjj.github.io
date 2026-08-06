@@ -12,6 +12,13 @@ struct Project {
 pub fn Projects() -> Element {
     let projects = vec![
         Project {
+            title: "Concurrent Port Scanner",
+            year: "2026",
+            description: "A high-performance, concurrent TCP port scanner build in Go. Features a worker pool architecture, banner-based service fingerprinting, graceful shutdown on SIGINT/SIGTERM, and ordered output via an in-flight result buffer.",
+            link_text: "[ GITHUB ]",
+            link_url: "https://github.com/MadManJJ/port-scanner",
+        },
+        Project {
             title: "PokeBattleP2P",
             year: "2025",
             description: "A decentralized, peer-to-peer multiplayer game built in Java. Utilizes low-level Java network sockets for real-time state synchronization, featuring a custom messaging protocol to handle player actions, combat resolution, and connection lifecycle management without a centralized server.",
@@ -25,13 +32,6 @@ pub fn Projects() -> Element {
             link_text: "[ GITHUB ]",
             link_url: "https://github.com/vishnu-23rd/vishnu-23-website",
         },
-        Project {
-            title: "Concurrent Port Scanner",
-            year: "2025",
-            description: "A high-performance, concurrent TCP port scanner build in Go. Features a worker pool architecture, banner-based service fingerprinting, graceful shutdown on SIGINT/SIGTERM, and ordered output via an in-flight result buffer.",
-            link_text: "[ GITHUB ]",
-            link_url: "https://github.com/MadManJJ/port-scanner",
-        }
     ];
     rsx! {
         div {
