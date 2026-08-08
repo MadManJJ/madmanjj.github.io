@@ -24,7 +24,7 @@ pub fn Resume() -> Element {
                 }
                 div {
                     class: "text-slate-700",
-                    "/ UPDATED JUL 2026"
+                    "/ UPDATED AUG 2026"
                 }
             }
             div {
@@ -80,6 +80,10 @@ pub fn Resume() -> Element {
                         class: "text-slate-700",
                         "Current GPAX: 3.97"
                     }
+                    p {
+                        class: "text-slate-700",
+                        "Key Coursework: Software-Defined Systems, Practical Software Testing, Computer Network, Computer Security,"
+                    }
                 }
             }
             div {
@@ -110,18 +114,18 @@ pub fn Resume() -> Element {
                         li {
                             class: "text-slate-700",
                             span { class: "font-semibold", "Cloud & Infrastructure:" }
-                            " Docker, Minikube, AWS, Terraform"
+                            " Docker, Kubernetes, AWS, Terraform"
                         }
                         li {
                             class: "text-slate-700",
                             span { class: "font-semibold", "CI/CD & Testing:" }
-                            " GitHub Actions, GitLab CI/CD, Playwright"
+                            " GitHub Actions, GitLab CI/CD, Playwright. Performance Testing"
                         }
 
                         li {
                             class: "text-slate-700",
                             span { class: "font-semibold", "Systems & Security:" }
-                            " Linux (Fedora, daily driver), Bash scripting, Networking fundamental, SSH"
+                            " Linux (Fedora, daily driver), Bash scripting, Networking fundamental, SSH, Vulnerability Scanning & Analysis"
                         }
                     }
                 }
