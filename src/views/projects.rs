@@ -23,13 +23,13 @@ pub fn Projects() -> Element {
             link_url: "",
         },
         Project {
-            title: "DevSecOps Security Scanner",
+            title: "DevSecOps Security Pipeline",
             role: "",
             year: "2026",
             description: "Automated DevSecOps pipeline script for secret detection, container vulnerability auditing, app deployment, and self-hosted Nginx security dashboards.",
             tech_stack: &["Bash", "Docker", "Nginx", "Gitleaks", "Linux"],
             link_text: "[ GITHUB ]",
-            link_url: "https://github.com/MadManJJ/appsec-scan-dashboard",
+            link_url: "",
         },
         Project {
             title: "Concurrent Port Scanner",

@@ -16,7 +16,7 @@ pub fn Homelabs() -> Element {
             year: "2026",
             description: "A personal homelab environment for hosting and managing self-hosted services across multiple devices. Runs Homepage as a centralized service dashboard alongside Home Assistant for home automation and File Browser for remote file management. Devices are connected through a private Tailscale mesh network, providing secure remote access to internal services without exposing them directly to the public internet.",
             link_text: "[ GITHUB ]",
-            link_url: "https://github.com/MadManJJ/homelab",
+            link_url: "",
         },
         Project {
             title: "Homelab DevSecOps Pipeline",
