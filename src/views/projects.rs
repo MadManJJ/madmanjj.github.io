@@ -14,7 +14,7 @@ struct Project {
 pub fn Projects() -> Element {
     let projects = vec![
         Project {
-            title: "Project Tracker",
+            title: "Room Reservation System",
             role: "Tech Lead",
             year: "2026",
             description: "A room availability and reservation platform built for the Chulalongkorn University Faculty of Engineering. Enables engineering students and committee members to discover available rooms, manage reservations, and coordinate shared spaces through real-time availability tracking and conflict-free scheduling.",
