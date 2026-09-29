@@ -14,7 +14,7 @@ struct Project {
 pub fn Projects() -> Element {
     let projects = vec![
         Project {
-            title: "Room Reservation System",
+            title: "Chula Engineering Reservation System",
             role: "Tech Lead",
             year: "2026",
             description: "A room availability and reservation platform built for the Chulalongkorn University Faculty of Engineering. Enables engineering students and committee members to discover available rooms, manage reservations, and coordinate shared spaces through real-time availability tracking and conflict-free scheduling.",
@@ -23,13 +23,13 @@ pub fn Projects() -> Element {
             link_url: "",
         },
         Project {
-            title: "DevSecOps Security Pipeline",
+            title: "Security Pipeline Scanner",
             role: "",
             year: "2026",
             description: "Automated DevSecOps pipeline script for secret detection, container vulnerability auditing, app deployment, and self-hosted Nginx security dashboards.",
             tech_stack: &["Bash", "Docker", "Nginx", "Gitleaks", "Linux"],
             link_text: "[ GITHUB ]",
-            link_url: "",
+            link_url: "https://github.com/MadManJJ/appsec-scan-dashboard",
         },
         Project {
             title: "Concurrent Port Scanner",
